@@ -1,0 +1,30 @@
+
+section .sc-box-icon {
+    text-align: left;
+    width: calc(25% - 53px);
+    margin-left: 53px;
+    margin-top: 10px;
+}
+
+section .sc-box-icon .image {
+    margin-bottom: 29px;
+    transition: all .8s ease;
+}
+
+section .sc-box-icon:hover .image {
+    transform: rotateX(360deg);
+}
+
+.sc-box-icon .headingg {
+    margin-bottom: 14px;
+}
+
+section .sc-box-icon .content {
+    padding-right: 6px;
+}
+
+.sc-box-icon .content {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "UrbanistLight";
+}
