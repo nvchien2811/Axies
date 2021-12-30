@@ -118,12 +118,16 @@
 <div style="min-height:800px">
   <ContentIndex/>
 </div>
+<div>
+  <Footer/>
+</div>
 </div>
 </template>
 
 <script>
 import BallBanner from './components/BallBanner'
 import ContentIndex from './components/ContentIndex.vue'
+import Footer from './components/Footer'
 export default {
   name: 'App',
   data () {
@@ -133,7 +137,8 @@ export default {
   },
   components: {
     BallBanner,
-    ContentIndex
+    ContentIndex,
+    Footer
   },
   created () {
     window.addEventListener('scroll', this.handleScroll)
