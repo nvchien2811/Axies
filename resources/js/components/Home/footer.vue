@@ -57,12 +57,12 @@
                 </div>
                 <div class="widget-social style-1">
                 <ul>
-                    <li><a href="#"><i class="fab fa-twitter"></i></li>
+                    <!-- <li><a href="#"><i class="fab fa-twitter"></i></li>
                     <li><a href="#"><b-icon icon="facebook"/></a></li>
                     <li class="style-2"><a href="#"><b-icon icon="cursor-fill"/></a></li>
                     <li><a href="#"><b-icon icon="youtube"/></a></li>
                     <li class="mgr-none"><a href="#"><b-icon icon="telephone-fill"/></a></li>
-                    <li class="mgr-none"><a href="#"><b-icon icon="google"/></a></li>
+                    <li class="mgr-none"><a href="#"><b-icon icon="google"/></a></li> -->
                 </ul>
                 </div>
             </div>

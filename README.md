@@ -1,6 +1,7 @@
 // install library
 npm i
+composer install
 
 //Running parallel
-npm run watch
 php artisan serve
+npm run watch
