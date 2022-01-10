@@ -1,0 +1,39 @@
+
+section .sc-box-icon {
+    text-align: left;
+    width: calc(25% - 53px);
+    margin-left: 53px;
+    margin-top: 10px;
+}
+
+section .sc-box-icon .image {
+    cursor: pointer;
+    margin-bottom: 29px;
+}
+
+@keyframes rorate-logo {
+    from{
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+section .sc-box-icon:hover .image img{
+    animation: rorate-logo 0.8s;
+}
+
+.sc-box-icon .headingg {
+    margin-bottom: 14px;
+}
+
+section .sc-box-icon .content {
+    padding-right: 6px;
+}
+
+.sc-box-icon .content {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "UrbanistLight";
+}

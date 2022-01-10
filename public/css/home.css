@@ -1,0 +1,337 @@
+body {
+    font-family: "UrbanistLight", sans-serif;
+}
+
+
+
+#app {
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 0px;
+}
+body:not(#_) .customDropdown span {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+body:not(#_) .customDropdown ul {
+    transition: all 0.3s ease;
+}
+body:not(#_) .nav-item ul li a {
+    font-weight: 600;
+    font-size: 18px;
+}
+body:not(#_) .nav-item ul li a:hover {
+    color: blue;
+    background-color: white;
+}
+.banner {
+    background-image: linear-gradient(227.3deg, #8a208c 0%, #181b81 100.84%);
+    position: relative;
+}
+#navbar {
+    height: 80px;
+    border-bottom: 1px solid rgba(235, 235, 235, 0.2);
+    padding-left: 50px;
+}
+.navbar-nav {
+    padding-left: 20px;
+}
+#theme-banner {
+    position: relative;
+    display: flex;
+    height: 641px;
+    opacity: 1;
+    padding-left: 50px;
+    flex-direction: row;
+}
+.wrapper-wallet {
+    display: flex;
+    padding: 16px 35px;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin-right: 18px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.wrapper-wallet.main {
+    position: relative;
+    margin-right: 84px;
+    margin-left: 0;
+    margin-top: -4px;
+    padding: 12px 35px 12px 32px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent none repeat scroll 0 0;
+}
+
+.wrapper-wallet > span {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.wrapper-wallet > i {
+  color: white;
+  font-size: 20px;
+  margin-right: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper-wallet:hover {
+    background-color: white;
+    cursor: pointer;
+}
+.wrapper-wallet:hover > span {
+    color: blue;
+    font-weight: bold;
+}
+
+.wrapper-wallet:hover > i {
+  color: blue;
+}
+
+.wrapper-wallet svg {
+    color: white;
+    font-weight: bold;
+}
+.wrapper-wallet:hover svg {
+    color: blue;
+    font-weight: bold;
+}
+.right-nav {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    align-items: center;
+    flex-direction: row;
+}
+#searchIcon {
+    margin-right: 30px;
+    cursor: pointer;
+}
+.mode_switcher {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 9;
+}
+#mode-light {
+    display: flex;
+    padding: 9px;
+    border-radius: 10px;
+    justify-content: center;
+    background-image: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+    margin-right: 10px;
+    cursor: pointer;
+}
+#mode-dark {
+    display: flex;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #343444;
+    justify-content: center;
+    cursor: pointer;
+}
+#content {
+    position: absolute;
+    width: 50%;
+    margin-top: 125px;
+    padding-left: 20px;
+    animation: view-content 1s;
+    text-align: left;
+}
+.heading {
+    color: white;
+    font-size: 56px;
+    font-weight: 700;
+    display: block;
+}
+.sub-heading {
+    transition-delay: 900ms;
+    transform: translateY(0) !important;
+    margin-top: 29px;
+    margin-bottom: 44px;
+    color: #ebebeb;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    font-family: "UrbanistLight";
+}
+.heading > span {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-fill-color: rgb(0 0 0/0%);
+}
+.group-btn {
+    display: flex;
+    flex-direction: row;
+}
+.logo {
+    font-size: 20px;
+}
+#image {
+    position: absolute;
+    width: 50%;
+    padding-top: 30px;
+    text-align: right;
+    z-index: 1;
+    transform: translateX(0px);
+    animation: move5 10s infinite linear;
+    right: 0%;
+    top: 10%;
+}
+
+.img-human {
+    position: absolute;
+    top: 0%;
+    max-width: 100%;
+    right: 26%;
+    animation: view-image 1s;
+}
+.img-bg {
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+    right: 10%;
+    animation: view-image 1s;
+}
+.text-wallet {
+    margin-left: 10px;
+}
+.icon-dropdwon {
+    color: white;
+    font-weight: bold;
+}
+@keyframes move-nav {
+    0% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+@keyframes view-content {
+    0% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+@keyframes view-image {
+    0% {
+        -webkit-transform: translateX(200px);
+        transform: translateX(200px);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+@media only screen and (max-width: 990px) {
+    .mb-style {
+        font-size: 40px;
+    }
+    #image {
+        display: none;
+    }
+    .shape {
+        display: none;
+    }
+    #content {
+        width: 100%;
+    }
+    #nav-collapse {
+        background-color: white;
+        z-index: 10;
+    }
+    body:not(#_) .customDropdown {
+        border-bottom: 1px solid rgba(138, 138, 160, 0.3);
+    }
+    body:not(#_) .customDropdown span {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 48px;
+        padding: 0 15px;
+        font-weight: 500;
+        color: #1f1f2c;
+    }
+    .icon-dropdwon {
+        color: black;
+        font-weight: bold;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+    .right-nav {
+        right: 80px;
+    }
+    .mode_switcher {
+        position: absolute;
+        top: 150%;
+        right: -50%;
+        flex-direction: column;
+        animation: appear_icon_wallet 0.5s;
+    }
+    #mode-light {
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (max-width: 1270px) {
+    #navbar {
+        padding-left: 10px;
+    }
+    #theme-banner {
+        padding-left: 0px;
+    }
+    .text-wallet {
+        display: none;
+    }
+    .icon-wallet {
+        animation: appear_icon_wallet 0.5s;
+    }
+    .wrapper-wallet.main {
+        padding: 12px;
+        margin-right: 10px;
+    }
+    .navbar-nav {
+        padding-left: 0px;
+    }
+}
+@keyframes appear_icon_wallet {
+    0% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+@keyframes move5 {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}

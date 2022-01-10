@@ -1,0 +1,439 @@
+@font-face {
+    font-family: "UrbanistBold";
+    font-weight: normal;
+    src: url("./font/Urbanist-Bold.ttf");
+}
+
+@font-face {
+    font-family: "UrbanistLight";
+    font-weight: normal;
+    src: url("./font/Urbanist-Light.ttf");
+}
+
+:root {
+    --primary-color: #fff;
+    --primary-color2: #1f1f2c;
+    --primary-color3: #5142fc;
+    --primary-color4: #7a798a;
+    --primary-color5: #f8f8f8;
+    --primary-color6: #14141f;
+    --primary-color7: #f8f8f8;
+    --bg-section: #fff;
+    --primary-color8: #7a798a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "UrbanistBold";
+}
+
+body {
+    color: var(--primary-color2);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background: var(--bg-section);
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    color: inherit;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    color: inherit;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    color: inherit;
+}
+
+h6 {
+    font-size: 15px;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color2);
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 0.1px;
+}
+
+p {
+    font-weight: 400;
+    color: #7a798a;
+}
+
+button {
+    display: inline-block;
+    -webkit-appearance: none;
+    transition: all ease 0.3s;
+    margin: 0;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: "UrbanistBold";
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.heading-live-auctions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    color: var(--primary-color2);
+  }
+  .heading-live-auctions .exp {
+    position: relative;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .1em;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .heading-live-auctions .exp:hover {
+    background: linear-gradient(to right,#E250E5,#4B50E6,#E250E5);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 700;
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    transition: color .2s ease-in-out;
+  }
+  .heading-live-auctions .exp.style2::after {
+    background: linear-gradient(216.56deg,#E250E5 5.32%,#4B50E6 94.32%);
+  }
+  .heading-live-auctions .exp::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+  }
+
+section .card .card-bottom .view-history:hover {
+    color: var(--primary-color3);
+}
+
+.load-more {
+    margin-top: -4px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 50px;
+}
+
+.load-more .btn-more {
+    position: relative;
+    display: inline-block;
+    background-color: #eeecff;
+    border: 2px solid #eeecff;
+    padding: 15px 40px;
+    color: var(--primary-color3);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+}
+
+.load-more .btn-more span {
+    font-size: 15px;
+    z-index: 1;
+    font-weight: 700;
+    line-height: 22px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.heading-live-auctions {
+    position: relative;
+    margin-bottom: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 40px;
+    height: 78px;
+}
+
+section {
+    position: relative;
+    background: var(--bg-section);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+
+section .card {
+    padding: 20px;
+    background: var(--bg-section);
+    box-shadow: 0 3px 16px rgb(47 83 109 / 12%);
+    border-radius: 20px;
+    overflow: hidden;
+    border: var(--bg-section);
+    transition: all 0.3s ease-in-out;
+    margin: 15px;
+}
+
+section .card:hover {
+    transform: translateY(-10px);
+}
+
+section .card .content,
+section .card .imgBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section .card .imgText {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+section .card .imgBx {
+    position: relative;
+    width: 290px;
+    height: 290px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+section .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+section .card:hover .imgBx img {
+    transform: scale(1.05);
+}
+
+section .card .imgBx .heart-button {
+    position: absolute;
+    top: 13px;
+    right: 11px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    padding: 2px 11px;
+    border-radius: 8px;
+    background-color: #14141f;
+    cursor: pointer;
+    border: none;
+}
+
+section .card .imgBx .heart-button i {
+    font-weight: 300;
+    margin-right: 3px;
+}
+
+section .card .imgBx .heart-button .number-like {
+    width: 22px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+}
+
+section .card .imgBx .coming-soon {
+    position: absolute;
+    top: 15px;
+    left: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #343444;
+    padding: 3px 19px;
+    border-radius: 13px;
+    background-color: #ffbd0c;
+}
+
+section .card .imgText .style {
+    text-decoration: none;
+    color: var(--primary-color2);
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 0.1px;
+    font-family: "UrbanistBold";
+    font-size: 18px;
+}
+
+section .card .imgText .style:hover {
+    color: var(--primary-color3);
+}
+
+section .card .imgText .tag {
+    width: 49px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    background-color: var(--primary-color3);
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    grid-area: Right;
+}
+
+section .card .meta-info {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    width: 100%;
+
+}
+
+section .card .meta-info .author {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+section .card .meta-info .author .avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+section .card .meta-info .author .avatar img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+section .card .meta-info .author .info span {
+    color: var(--primary-color4);
+    font-size: 13px;
+    line-height: 21px;
+    font-family: "UrbanistLight";
+}
+
+section .card .meta-info .author .info h6 {
+    line-height: 22px;
+    text-decoration: none;
+}
+
+section .card .meta-info .price {
+    text-align: right;
+}
+
+section .card .meta-info .price span {
+    color: var(--primary-color4);
+    font-size: 13px;
+    line-height: 21px;
+    font-family: "UrbanistLight", sans-serif;
+}
+
+section .card .meta-info .price h5 {
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    color: var(--primary-color2);
+}
+
+section .card .card-bottom {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .card .card-bottom .button-pri3 {
+    padding: 10px 20px 11px;
+    position: relative;
+    display: inline-block;
+    border: 2px solid var(--primary-color3);
+    color: var(--primary-color3);
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+section .card .card-bottom .button-pri3:hover {
+    color: var(--bg-section);
+    background-color: var(--primary-color3);
+}
+
+section .card .card-bottom .button-pri3 span {
+    padding-left: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    position: relative;
+    z-index: 1;
+}
+
+section .card .card-bottom .button-pri3 i {
+    font-size: 20px;
+}
+
+section .card .card-bottom .view-history .fa-sync {
+    color: var(--primary-color2);
+    padding-right: 8px;
+}
+
+section .card .card-bottom .view-history {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-color4);
+    margin-left: 30px;
+}
+
+
