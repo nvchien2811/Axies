@@ -1,25 +1,23 @@
 <template>
-  <div class="wrapper-content">
-    <div class="live-auctions">
-      <div class="heading-live-auctions">
-        <h2 class="tf-title">Create And Sell Your NFTs</h2>
-      </div>
-      <section>
-        <div v-for="item in dataNFTs" :key="item.id" class="sc-box-icon">
-          <div class="image">
-            <img :src="item.image" alt="" />
-          </div>
-          <h3 class="headingg">
-            <a href="#">
-              {{ item.heading }}
-            </a>
-          </h3>
-          <p class="content">
-            {{ item.content }}
-          </p>
-        </div>
-      </section>
+  <div class="live-auctions">
+    <div class="heading-live-auctions">
+      <h2 class="tf-title">Create And Sell Your NFTs</h2>
     </div>
+    <section>
+      <div v-for="item in dataNFTs" :key="item.id" class="sc-box-icon">
+        <div class="image">
+          <img :src="item.image" alt="" />
+        </div>
+        <h3 class="headingg">
+          <a href="#">
+            {{ item.heading }}
+          </a>
+        </h3>
+        <p class="content">
+          {{ item.content }}
+        </p>
+      </div>
+    </section>
   </div>
 </template>
 

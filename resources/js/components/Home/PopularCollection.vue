@@ -1,5 +1,4 @@
 <template>
-  <div class="wrapper-content">
     <div class="live-auctions">
       <div class="heading-live-auctions">
         <h2 class="tf-title">Popular Collection</h2>
@@ -58,7 +57,6 @@
         </div>
       </section>
     </div>
-  </div>
 </template>
 
 <script>

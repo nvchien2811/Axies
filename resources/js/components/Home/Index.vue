@@ -147,9 +147,6 @@
     </div>
     <div style="min-height: 800px">
       <ContentIndex />
-      <TodayPick />
-      <PopularCollection />
-      <CreateNFTs />
     </div>
     <div>
       <Footer />
@@ -160,9 +157,6 @@
 <script>
 import BallBanner from "./BallBanner";
 import ContentIndex from "./ContentIndex";
-import TodayPick from "./TodayPick";
-import PopularCollection from "./PopularCollection";
-import CreateNFTs from "./CreateNFTs";
 import Footer from "./Footer";
 export default {
   name: "App",
@@ -174,10 +168,7 @@ export default {
   components: {
     BallBanner,
     ContentIndex,
-    TodayPick,
-    PopularCollection,
-    CreateNFTs,
-    Footer,
+    Footer
   },
   created() {
     window.addEventListener("scroll", this.handleScroll);

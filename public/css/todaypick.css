@@ -112,39 +112,39 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     color: var(--primary-color2);
-  }
-  .heading-live-auctions .exp {
-    position: relative;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: .1em;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .heading-live-auctions .exp:hover {
-    background: linear-gradient(to right,#E250E5,#4B50E6,#E250E5);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-weight: 700;
-    background-size: 200% 200%;
-    animation: rainbow 2s ease-in-out infinite;
-    transition: color .2s ease-in-out;
-  }
-  .heading-live-auctions .exp.style2::after {
-    background: linear-gradient(216.56deg,#E250E5 5.32%,#4B50E6 94.32%);
-  }
-  .heading-live-auctions .exp::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 100%;
-    height: 1px;
-  }
+}
+.heading-live-auctions .exp {
+position: relative;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: .1em;
+cursor: pointer;
+text-decoration: none;
+}
+.heading-live-auctions .exp:hover {
+background: linear-gradient(to right,#E250E5,#4B50E6,#E250E5);
+-webkit-text-fill-color: transparent;
+background-clip: text;
+-webkit-background-clip: text;
+font-weight: 700;
+background-size: 200% 200%;
+animation: rainbow 2s ease-in-out infinite;
+transition: color .2s ease-in-out;
+}
+.heading-live-auctions .exp.style2::after {
+background: linear-gradient(216.56deg,#E250E5 5.32%,#4B50E6 94.32%);
+}
+.heading-live-auctions .exp::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: -4px;
+width: 100%;
+height: 1px;
+}
 
 section .card .card-bottom .view-history:hover {
     color: var(--primary-color3);
@@ -159,9 +159,7 @@ section .card .card-bottom .view-history:hover {
     max-width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    margin-bottom: 50px;
 }
-
 .load-more .btn-more {
     position: relative;
     display: inline-block;
@@ -190,7 +188,7 @@ section .card .card-bottom .view-history:hover {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding-left: 40px;
+    /* padding-left: 40px; */
     height: 78px;
 }
 

@@ -8,6 +8,12 @@
 .live-auctions {
     padding-bottom: 54px;
 }
+.live-auctions.style3{
+    padding-top: 41px;
+}
+.live-auctions.style4{
+    padding: 27px 0 30px;
+}
 .top-seller {
     padding-bottom: 54px;
 }

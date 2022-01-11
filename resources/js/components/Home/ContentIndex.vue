@@ -81,6 +81,9 @@
       </div>
     </VueSlickCarousel>
   </div>
+  <TodayPick />
+  <PopularCollection />
+  <CreateNFTs />
 </div>
 </template>
 
@@ -88,6 +91,9 @@
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+import TodayPick from "./TodayPick";
+import PopularCollection from "./PopularCollection";
+import CreateNFTs from "./CreateNFTs";
 
 function countdown() {
   let day = document.getElementById('day');
@@ -365,7 +371,7 @@ export default {
             },
           },
         ],
-      },
+      }
     };
   },
   methods: {
@@ -379,7 +385,10 @@ export default {
   },
   components: {
     VueSlickCarousel,
-  },
+    TodayPick,
+    PopularCollection,
+    CreateNFTs
+  }
 };
 </script>
 

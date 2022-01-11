@@ -8,6 +8,12 @@
 .footer .widget p {
     font-size: 14px;
     line-height: 22px;
+    text-align: left;
+}
+.widget {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .widget-logo .sub-widget-logo {
     padding-right: 35px;
@@ -42,6 +48,7 @@ ul, ol {
 }
 .widget-menu ul li {
     margin-bottom: 14px;
+    text-align: left;
 }
 .widget-menu ul li a {
     font-size: 14px;
@@ -51,6 +58,7 @@ ul, ol {
     color: #1F1F2C;
     transition: all .3s ease-in-out;
     letter-spacing: .1px;
+    font-family: "Urbanist, sans-serif";
 }
 .widget-menu ul li a:hover{
     color: #5142FC;
@@ -72,6 +80,9 @@ ul, ol {
     visibility: hidden;
     opacity: 0;
     transition: all .3s ease-in-out;
+}
+.widget-subcribe .form-subcribe{
+    width: 100%;
 }
 .widget-subcribe .form-subcribe form {
     margin-top: 25px;
@@ -131,12 +142,17 @@ ul, ol {
     background-color: #ebebeb;
     color: #7a798a;
 }
-.widget-social.style-1 li :hover{
+.widget-social.style-1 li a:hover{
     background-color: #5142FC;
-    color: white;
+}
+.widget-social.style-1 li a:hover i{
+    color: white
 }
 .widget-social.style-1 ul li {
     margin-right: 12px;
+}
+.form-submit button {
+    overflow: hidden
 }
 @media only screen and (max-width: 990px){
 .footer{

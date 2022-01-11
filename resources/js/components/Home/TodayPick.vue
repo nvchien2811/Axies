@@ -1,6 +1,5 @@
 <template>
-  <div class="wrapper-content">
-    <div class="live-auctions">
+    <div class="live-auctions style3">
       <div class="heading-live-auctions">
         <h2 class="tf-title">Today's Pick</h2>
         <a class="exp style2">EXPLORE MORE</a>
@@ -384,7 +383,6 @@
         </a>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
