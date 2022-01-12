@@ -93,8 +93,10 @@ ul, ol {
     background: #f8f8f8;
     width: 100%;
     padding: 13px 50px 12px 22px;
-    font-size: 14px;
+    font-size: 16px;
     border: 1px solid rgba(138,138,160,.3);
+    font-family: "Urbanist";
+    color:gray;
 }
 .widget-subcribe .form-subcribe input:focus {
     outline: none;
@@ -122,6 +124,7 @@ ul, ol {
     display:flex;
     justify-content:center;
     align-items: center;
+    border-width: 0px;
 }
 .widget-social.style-1 ul li a {
     text-decoration: none;
