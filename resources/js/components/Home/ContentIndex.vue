@@ -20,13 +20,14 @@
                 <i class="fas fa-fire"></i>
               </span>
               <span class="countdown">
-                <span id="day">5</span>
+                <span>{{ formatDate(item.data_timer) }}</span>
+                <!-- <span id="day">5</span>
                 <span class="dot">:</span>
                 <span id="hour">23</span>
                 <span class="dot">:</span>
                 <span id="minute">11</span>
                 <span class="dot">:</span>
-                <span id="seconds">40</span>
+                <span id="seconds">40</span> -->
               </span>
             </div>
             <div class="button-place-bid">
@@ -94,6 +95,7 @@ import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 import TodayPick from "./TodayPick";
 import PopularCollection from "./PopularCollection";
 import CreateNFTs from "./CreateNFTs";
+import moment from 'moment'
 
 function countdown() {
   let day = document.getElementById('day');
@@ -130,6 +132,7 @@ export default {
           quantityFavorite: 100,
           price: 4.89,
           tags: "BSC",
+          data_timer:316400
         },
         {
           id: 2,
@@ -142,6 +145,7 @@ export default {
           quantityFavorite: 220,
           price: 4.89,
           tags: "BSC",
+          data_timer:81640
         },
         {
           id: 3,
@@ -154,6 +158,7 @@ export default {
           quantityFavorite: 90,
           price: 4.89,
           tags: "BSC",
+          data_timer:516400
         },
         {
           id: 4,
@@ -166,6 +171,7 @@ export default {
           quantityFavorite: 145,
           price: 4.89,
           tags: "BSC",
+          data_timer:316400
         },
         {
           id: 5,
@@ -178,6 +184,7 @@ export default {
           quantityFavorite: 100,
           price: 4.89,
           tags: "BSC",
+          data_timer:316400
         },
         {
           id: 6,
@@ -190,6 +197,7 @@ export default {
           quantityFavorite: 220,
           price: 4.89,
           tags: "BSC",
+          data_timer:316400
         },
       ],
       dataTopSeller: [
@@ -382,12 +390,27 @@ export default {
         return text;
       }
     },
+    formatDate(string) {
+      return moment(string).format('hh:mm:ss')
+    }
   },
   components: {
     VueSlickCarousel,
     TodayPick,
     PopularCollection,
     CreateNFTs
+  },
+  watch: {
+    dataLiveAuctions: {
+        handler(value) {
+          if (value > 0) {
+              setTimeout(() => {
+                  this.dataLiveAuctions.map(e=>e.data_timer--)
+              }, 1000);
+          }
+      },
+      immediate: true // This ensures the watcher is triggered upon creation
+    }
   }
 };
 </script>
